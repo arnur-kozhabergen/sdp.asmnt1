@@ -26,5 +26,18 @@ public class Main {
         .build();
 
         System.out.println(luxApartment);
+
+        System.out.println();
+        System.out.println();
+
+        ApartmentDirector director = new ApartmentDirector();
+
+        Apartment studio = director.buildStudio(new StandardApartmentBuilder());
+        System.out.println(studio);
+
+        Apartment pentHouse = director.buildPentHouse(new LuxuryApartmentBuilder());
+        System.out.println(pentHouse);
+
+
     }
 }
